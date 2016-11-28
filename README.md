@@ -1,7 +1,7 @@
 # GetUDIDFromStoreKit
-#### Get UDID(Unique Device Identifier) From StoreKit
+#### Get UDID(Unique Device Identifier) From StoreKit(If your App has some purchase item using StoreKit, we can find UDID from receipt)
 
-##### 1. After iOS5, Developer can't use "uniqueIdentifier" like this "[UIDevice currentDevice] uniqueIdentifier]". The property is deprecated, and replaced by "identifierForVendor". Also we can use OpenUDID or SecureUDID, working with NSUserDefaults and Keychain. **Now, if your App has some purchase item using StoreKit, we can find UDID from receipt.**
+##### 1. After iOS5, Developer can't use "uniqueIdentifier" like this "[UIDevice currentDevice] uniqueIdentifier]". The property is deprecated, and replaced by "identifierForVendor". Also we can use OpenUDID or SecureUDID, working with NSUserDefaults and Keychain. 
 
 
 ```objc
