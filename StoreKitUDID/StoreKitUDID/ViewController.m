@@ -60,6 +60,9 @@
     for (SKPaymentTransaction *transaction in transactions) {
         
         if (SKPaymentTransactionStatePurchased == transaction.transactionState) {
+            
+            //-[SKPaymentTransaction transactionReceipt] deprecated after iOS7 but it still works on iOS7-10.
+            //-[NSBundle appStoreReceiptURL] dose not contain purchase-info.
             NSData *receiptData = transaction.transactionReceipt;
             NSString *UDID = [self UDIDFromReceiptData:receiptData];
             NSLog(@"UDID:%@",UDID);
