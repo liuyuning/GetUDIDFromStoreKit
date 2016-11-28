@@ -1,0 +1,19 @@
+{
+	"original-purchase-date-pst" = "2016-11-25 23:38:54 America/Los_Angeles";
+	"purchase-date-ms" = "1480145934224";
+	"unique-identifier" = "0c2f4047693e8fd038fe6207d1891ea45525d902";
+	"original-transaction-id" = "440000267115041";
+	"bvrs" = "1.10";
+	"app-item-id" = "1106936921";
+	"transaction-id" = "440000267115041";
+	"quantity" = "1";
+	"original-purchase-date-ms" = "1480145934224";
+	"unique-vendor-identifier" = "FEBD2CA5-A022-4AA4-B9CB-24C0D9C20D77";
+	"item-id" = "1114015840";
+	"version-external-identifier" = "819514054";
+	"product-id" = "com.tencent.mhzx.goldingot_60";
+	"purchase-date" = "2016-11-26 07:38:54 Etc/GMT";
+	"original-purchase-date" = "2016-11-26 07:38:54 Etc/GMT";
+	"bid" = "com.tencent.mhzx";
+	"purchase-date-pst" = "2016-11-25 23:38:54 America/Los_Angeles";
+}
