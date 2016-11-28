@@ -41,7 +41,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject
 }
 ```
 
-##### 4. The "purchase-info" contain many info encode by base64. After decode, see below and in file "purchase-info".
+##### 4. The "purchase-info" contain many info encode by base64. After decode, it's also a property list. see below and in file "purchase-info".
 
 ```objc
 {
@@ -65,7 +65,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject
 }
 ```
 
-##### 5. We can get the UDID from the data.
+##### 5. We can get the UDID from the "Receipt Data".
 -[SKPaymentTransaction transactionReceipt] deprecated after iOS7 but it still works on iOS7-10.
 
 -[NSBundle appStoreReceiptURL] dose not contain purchase-info.
