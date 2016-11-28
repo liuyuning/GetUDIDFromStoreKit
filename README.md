@@ -1,7 +1,7 @@
 # GetUDIDFromStoreKit
-Get UDID(Unique Device Identifier) From StoreKit
+#### Get UDID(Unique Device Identifier) From StoreKit
 
-#### 1. After iOS5, Developer can't use "uniqueIdentifier" like this "[UIDevice currentDevice] uniqueIdentifier]".The property is deprecated, and rplaced by "identifierForVendor".Also we can use OpenUDID or SecureUDID, working with NSUserDefaults and Keychain. **Now, if your App has some purchase item using StoreKit, we can find UDID from receipt.**
+##### 1. After iOS5, Developer can't use "uniqueIdentifier" like this "[UIDevice currentDevice] uniqueIdentifier]".The property is deprecated, and rplaced by "identifierForVendor".Also we can use OpenUDID or SecureUDID, working with NSUserDefaults and Keychain. **Now, if your App has some purchase item using StoreKit, we can find UDID from receipt.**
 
 
 ```objc
@@ -13,7 +13,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject
 @end
 ```
 
-#### 2. In SKPaymentQueue’s delegate we can get "Receipt Data" from SKPaymentTransaction in state of SKPaymentTransactionStatePurchased.
+##### 2. In SKPaymentQueue’s delegate we can get "Receipt Data" from SKPaymentTransaction in state of SKPaymentTransactionStatePurchased.
 
 ```objc
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedTransactions:(NSArray<SKPaymentTransaction *> *)transactions{
@@ -31,7 +31,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject
 }
 ```
 
-#### 3. The "Receipt Data" will send to Apple and verify the purchase is success. Actually， the "Receipt Data" is a old-style property list, like below and in file "transactionReceipt".
+##### 3. The "Receipt Data" will send to Apple and verify the purchase is success. Actually， the "Receipt Data" is a old-style property list, like below and in file "transactionReceipt".
 
 ```objc
 {
@@ -42,7 +42,7 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject
 }
 ```
 
-#### 4. The "purchase-info" contain many info encode by base64. After decode, like below and in file "purchase-info".
+##### 4. The "purchase-info" contain many info encode by base64. After decode, like below and in file "purchase-info".
 
 ```objc
 {
