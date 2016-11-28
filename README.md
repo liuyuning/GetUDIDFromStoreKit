@@ -66,6 +66,9 @@ NS_CLASS_AVAILABLE_IOS(2_0) @interface UIDevice : NSObject
 ```
 
 ##### 5. We can get the UDID from the data.
+-[SKPaymentTransaction transactionReceipt] deprecated after iOS7 but it still works on iOS7-10.
+
+-[NSBundle appStoreReceiptURL] dose not contain purchase-info.
 
 ```objc
 - (NSString *)UDIDFromReceiptData:(NSData *)receiptData{
